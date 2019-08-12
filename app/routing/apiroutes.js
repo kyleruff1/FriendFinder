@@ -14,9 +14,6 @@ apirouter.post("/api/friends", function(req, res){
 	console.log("posting...");
 	var newFriend = req.body;
 	console.log(newFriend);
-	//console.log(newFriend['scores[]']); //don't know why scores show up as "scores[]"
-	//console.log(newFriend.scores); //returns scores as 'scores[]'
-	//console.log(parseFloat(JSON.parse(newFriend.scores[0])));//does not work - undefined
 
 	//this function coverts users's results into a simple array of numbers
 	var newScore = function(array){
